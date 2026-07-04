@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bombay Brew Café | Artisanal Coffee & Heritage Bistro</title>
+  <meta name="description" content="Experience the rich heritage and vibrant flavors of Bombay. Serving authentic cutting chai, premium specialty coffees, iconic street-style burgers, wood-fired pizzas, and classic main courses at Kadma, Jamshedpur.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">Bombay</span> Brew Café
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#contact">Find Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#reserve" class="btn btn-primary nav-btn" id="openReserveBtn">Book a Table</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Est. 2019</span>
+      <div class="hero-rating">
+        <span class="rating-value">4.6</span>
+        <div class="rating-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <span class="rating-text">Google Reviews</span>
+      </div>
+      <h1>Crafting the Soul of Bombay in Every Brew</h1>
+      <p>Experience the perfect union of iconic cutting chai, artisanal single-origin espresso, gourmet street-style fusion, and warm coastal heritage.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#story" class="btn btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#menu"><i class="fa-solid fa-chevron-down animate-bounce"></i></a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Artisanal Selection</span>
+        <h2>Our Menu</h2>
+        <div class="decorator-line"><span></span></div>
+        <p class="section-desc">Taste the harmony of premium ingredients and local nostalgia. Click on any category below to view our curated dishes and pricing.</p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Drinks Card -->
+        <div class="menu-card" data-category="drinks">
+          <div class="card-img-wrapper">
+            <img src="images/drinks.jpg" alt="Drinks Menu">
+            <div class="card-overlay">
+              <span class="btn btn-card">View Selection</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-icon"><i class="fa-solid fa-mug-hot"></i></div>
+            <h3>Coffee & Tea</h3>
+            <p>From authentic spiced cutting chai to micro-lot single origin pour overs.</p>
+          </div>
+        </div>
+
+        <!-- Burgers Card -->
+        <div class="menu-card" data-category="burgers">
+          <div class="card-img-wrapper">
+            <img src="images/burgers.jpg" alt="Burger Menu">
+            <div class="card-overlay">
+              <span class="btn btn-card">View Selection</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-icon"><i class="fa-solid fa-burger"></i></div>
+            <h3>Sandwiches & Burgers</h3>
+            <p>Iconic street toasties and craft fusion burgers with secret chutneys.</p>
+          </div>
+        </div>
+
+        <!-- Pizza Card -->
+        <div class="menu-card" data-category="pizza">
+          <div class="card-img-wrapper">
+            <img src="images/pizza.jpg" alt="Pizza Menu">
+            <div class="card-overlay">
+              <span class="btn btn-card">View Selection</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+            <h3>Pizza</h3>
+            <p>Artisanal wood-fired thin crusts loaded with signature local toppings.</p>
+          </div>
+        </div>
+
+        <!-- Main Course Card -->
+        <div class="menu-card" data-category="maincourse">
+          <div class="card-img-wrapper">
+            <img src="images/maincourse.jpg" alt="Main Course Menu">
+            <div class="card-overlay">
+              <span class="btn btn-card">View Selection</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="card-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Main Course & Desserts</h3>
+            <p>Hearty heritage platters followed by decadent fusion sweets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section id="story" class="story-section">
+    <div class="container">
+      <div class="story-wrapper">
+        <div class="story-content">
+          <h2>The Spirit of Bombay Brew Café</h2>
+          <div class="decorator-line"><span></span></div>
+          <p>At Bombay Brew Café, we believe great food and coffee bring people together. Nestled in a welcoming rooftop setting, our café is a place to unwind, connect, and create memories. From handcrafted coffees and refreshing beverages to flavorful pizzas, burgers, and signature main courses, every item is prepared with care and passion.</p>
+          <p>Whether you're catching up with friends, enjoying a family outing, or simply taking a break from a busy day, Bombay Brew Café offers the perfect blend of taste, comfort, and hospitality.</p>
+          <div class="story-features">
+            <div class="feature-item">
+              <i class="fa-solid fa-seedling"></i>
+              <span>Locally Sourced</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-fire"></i>
+              <span>Wood-fired Cooking</span>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-heart"></i>
+              <span>Crafted with Love</span>
+            </div>
+          </div>
+        </div>
+        <div class="story-image">
+          <div class="image-border-decoration"></div>
+          <div class="story-img-container">
+            <img src="images/hero_bg.jpg" alt="Bombay Brew Café Interior">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation & Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-panel">
+          <span class="subtitle">Visit Us</span>
+          <h2>Let's Connect</h2>
+          <div class="decorator-line"><span></span></div>
+          <p class="panel-desc">Nestled at the rooftop of Ray Building in Kadma, we invite you to experience warm breezes, scenic views, and premium hospitality.</p>
+          
+          <div class="info-links">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="info-text">
+                <h4>Location</h4>
+                <p>Rooftop, Ray Building, Uliyan Main Rd, near Brahmalok Dham, opp. Aastha Cottage, Kadma, Jamshedpur, Jharkhand 831005</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="info-text">
+                <h4>Hours</h4>
+                <p>Mon - Sun: 8:30 AM - 11:00 PM</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="info-text">
+                <h4>Call Us</h4>
+                <p><a href="tel:07488530185" class="phone-link">07488530185</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="reserve-form-panel" id="reserve">
+          <h3>Book a Table</h3>
+          <p>Reserve a cozy corner for your tea dates or work sessions.</p>
+          <div class="google-form-wrapper">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdm5ApkA7bFkIDyR45WqnvfHF0Z7-mN0veG7_MbjehBUhPJiQ/viewform?embedded=true" width="100%" height="720" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo"><span class="logo-accent">Bombay</span> Brew Café</a>
+        <p>A fusion of coastal nostalgia and specialty coffee culture.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/bombaybrewcafe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/166dxWovH38/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2019 Bombay Brew Café. All Rights Reserved. Crafted for premium hospitality.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu Details Modal -->
+  <div class="modal" id="menuModal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <div class="modal-category-icon" id="modalIcon"><i class="fa-solid fa-mug-hot"></i></div>
+        <h3 id="modalTitle">Category Title</h3>
+        <p id="modalDescription">Category description goes here.</p>
+      </div>
+      <div class="modal-body">
+        <div class="menu-items-list" id="modalItemsList">
+          <!-- Items will be injected dynamically via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
