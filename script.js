@@ -246,41 +246,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const reservationForm = document.getElementById('reservationForm');
   const formFeedback = document.getElementById('formFeedback');
 
-  reservationForm.addEventListener('submit', (e) => {
+  reservationForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const name = document.getElementById('resName').value.trim();
+    const phone = document.getElementById('resPhone').value.trim();
     const guests = document.getElementById('resGuests').value;
     const time = document.getElementById('resTime').value;
 
-    // Show booking loader state
     formFeedback.textContent = "Checking table availability...";
     formFeedback.className = "form-feedback";
-    
+
     const submitBtn = reservationForm.querySelector('button[type="submit"]');
     const originalBtnText = submitBtn.textContent;
     submitBtn.disabled = true;
     submitBtn.textContent = "Processing...";
 
-    setTimeout(() => {
-      // Success response simulation
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbxvPc1HF-c0t_ie79oVavuLgfddWI7TmJyjNW-afbU5d-7ocTozt9gIkqwVE1Kn_-drZw/exec", {
+        method: "POST",
+        body: JSON.stringify({ fullName: name, phoneNumber: phone, guests, preferredTime: time }),
+        headers: { "Content-Type": "text/plain" }
+      });
+
       formFeedback.textContent = `Success! Table for ${guests} reserved for you at ${time}. Welcome, ${name}!`;
       formFeedback.className = "form-feedback success";
-      
-      // Reset button and inputs
+      reservationForm.reset();
+    } catch (err) {
+      formFeedback.textContent = "Something went wrong. Please try again or call us.";
+      formFeedback.className = "form-feedback error";
+    } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = originalBtnText;
-      reservationForm.reset();
+    }
 
-      // Clear success feedback after 5 seconds
-      setTimeout(() => {
-        if (formFeedback.classList.contains('success')) {
-          formFeedback.textContent = "";
-          formFeedback.className = "form-feedback";
-        }
-      }, 6000);
-
-    }, 1500);
+    setTimeout(() => {
+      if (formFeedback.classList.contains('success')) {
+        formFeedback.textContent = "";
+        formFeedback.className = "form-feedback";
+      }
+    }, 6000);
   });
 
 });
