@@ -1101,7 +1101,9 @@ img {
   }
 
   .nav-actions .btn-primary {
-    display: none; /* Hide button inside nav for mobile, keep in reserve section */
+    display: inline-flex;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
   }
 
   /* Hero adjustments */
