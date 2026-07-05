@@ -18,25 +18,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Mobile Navigation Toggle ---
   const mobileToggle = document.getElementById('mobileToggle');
+  const mobileClose = document.getElementById('mobileClose');
   const navLinks = document.getElementById('navLinks');
   const navLinksItems = document.querySelectorAll('.nav-links a');
 
   mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    // Change icon between burger and close
-    const icon = mobileToggle.querySelector('i');
-    if (navLinks.classList.contains('active')) {
-      icon.className = 'fa-solid fa-xmark';
-    } else {
-      icon.className = 'fa-solid fa-bars-staggered';
-    }
+    navLinks.classList.add('active');
+  });
+
+  mobileClose.addEventListener('click', () => {
+    navLinks.classList.remove('active');
   });
 
   // Close mobile menu when clicking a link
   navLinksItems.forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
-      mobileToggle.querySelector('i').className = 'fa-solid fa-bars-staggered';
     });
   });
 

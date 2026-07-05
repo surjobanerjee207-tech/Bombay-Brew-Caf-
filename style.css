@@ -264,6 +264,18 @@ img {
   cursor: pointer;
 }
 
+.mobile-close {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 /* --- Hero Section --- */
 .hero {
   position: relative;
@@ -1074,6 +1086,10 @@ img {
   }
   
   .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-close {
     display: block;
   }
 
