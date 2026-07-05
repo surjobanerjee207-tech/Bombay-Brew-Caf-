@@ -266,6 +266,7 @@ img {
 
 .mobile-close-item {
   display: none;
+  list-style: none;
 }
 
 .mobile-close {
