@@ -264,6 +264,10 @@ img {
   cursor: pointer;
 }
 
+.mobile-close-item {
+  display: none;
+}
+
 .mobile-close {
   display: none;
   position: absolute;
@@ -1086,6 +1090,10 @@ img {
   }
   
   .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-close-item {
     display: block;
   }
 
