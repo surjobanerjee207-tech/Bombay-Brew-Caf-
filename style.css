@@ -1128,9 +1128,7 @@ img {
   }
 
   .nav-actions .btn-primary {
-    display: inline-flex;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
+    display: none;
   }
 
   /* Hero adjustments */
