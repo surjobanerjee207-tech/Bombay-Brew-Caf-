@@ -263,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
     submitBtn.textContent = "Processing...";
 
     try {
-      await fetch("https://script.google.com/macros/s/AKfycbxvPc1HF-c0t_ie79oVavuLgfddWI7TmJyjNW-afbU5d-7ocTozt9gIkqwVE1Kn_-drZw/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbyZnJ4wKmBNRmKcexA80thmgSYjs2mkGixasI6pmkMruuwquT06SQ__gb6VPd9cRC0mdA/exec", {
         method: "POST",
         body: JSON.stringify({ fullName: name, phoneNumber: phone, guests, preferredTime: time }),
         headers: { "Content-Type": "text/plain" }
