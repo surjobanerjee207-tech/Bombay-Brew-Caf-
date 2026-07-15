@@ -1,12 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <!-- Background circle (espresso dark color) -->
-  <circle cx="50" cy="50" r="48" fill="#171412" stroke="#d97706" stroke-width="3"/>
-  <!-- Coffee cup silhouette in gold -->
-  <path d="M30 40 h35 v25 c0 8.28-6.72 15-15 15 H45 c-8.28 0-15-6.72-15-15 z" fill="none" stroke="#d97706" stroke-width="5" stroke-linejoin="round"/>
-  <!-- Handle -->
-  <path d="M65 45 h6 c4.42 0 8 3.58 8 8 v4 c0 4.42-3.58 8-8 8 h-6" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
-  <!-- Coffee steam ripples -->
-  <path d="M38 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
-  <path d="M48 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
-  <path d="M58 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <!-- Background circle (dark charcoal/espresso) -->
+  <circle cx="100" cy="78" r="65" fill="#0c0b0a" />
+  
+  <!-- Double gold border -->
+  <circle cx="100" cy="78" r="62" fill="none" stroke="#e59a3c" stroke-width="2" />
+  <circle cx="100" cy="78" r="58" fill="none" stroke="#e59a3c" stroke-width="1" />
+  
+  <!-- Steam lines (quadratic curves bowing left) -->
+  <path d="M 88 41 Q 83 35 88 29" fill="none" stroke="#e59a3c" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 100 41 Q 95 35 100 29" fill="none" stroke="#e59a3c" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 112 41 Q 107 35 112 29" fill="none" stroke="#e59a3c" stroke-width="2.5" stroke-linecap="round" />
+  
+  <!-- Clip path for two-tone shading of the coffee cup -->
+  <clipPath id="cup-clip">
+    <path d="M 74 47 L 124 47 L 120 71 Q 119 77 113 77 L 85 77 Q 79 77 78 71 Z" />
+  </clipPath>
+  
+  <g clip-path="url(#cup-clip)">
+    <!-- Top half (light gold) -->
+    <rect x="70" y="43" width="60" height="18" fill="#e59a3c" />
+    <!-- Bottom half (dark shading gold) -->
+    <rect x="70" y="61" width="60" height="17" fill="#b66e1e" />
+  </g>
+  
+  <!-- Cup handle (light gold) -->
+  <path d="M 124 49 C 137 49 137 67 124 67" fill="none" stroke="#e59a3c" stroke-width="5" stroke-linecap="round" />
+  
+  <!-- Saucer/bar under the cup -->
+  <rect x="69" y="83" width="62" height="6" rx="3" fill="#e59a3c" />
+  
+  <!-- Typography matching brand font styles -->
+  <text x="100" y="138" font-family="'Playfair Display', 'Georgia', serif" font-size="18.5" font-weight="700" fill="#e59a3c" text-anchor="middle" letter-spacing="0.5">BOMBAY BREW</text>
+  <text x="100" y="154" font-family="'Outfit', 'Arial', sans-serif" font-size="9.5" font-weight="600" fill="#ffffff" text-anchor="middle" letter-spacing="3.5">CAFÉ</text>
 </svg>
