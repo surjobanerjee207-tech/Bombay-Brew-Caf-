@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background circle (espresso dark color) -->
+  <circle cx="50" cy="50" r="48" fill="#171412" stroke="#d97706" stroke-width="3"/>
+  <!-- Coffee cup silhouette in gold -->
+  <path d="M30 40 h35 v25 c0 8.28-6.72 15-15 15 H45 c-8.28 0-15-6.72-15-15 z" fill="none" stroke="#d97706" stroke-width="5" stroke-linejoin="round"/>
+  <!-- Handle -->
+  <path d="M65 45 h6 c4.42 0 8 3.58 8 8 v4 c0 4.42-3.58 8-8 8 h-6" fill="none" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  <!-- Coffee steam ripples -->
+  <path d="M38 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+  <path d="M48 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+  <path d="M58 28 c0-4 4-4 4-8 s-4-4-4-8" fill="none" stroke="#d97706" stroke-width="3" stroke-linecap="round"/>
+</svg>
